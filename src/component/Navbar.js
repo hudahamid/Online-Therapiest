@@ -1,36 +1,15 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-
-
-
 function NavBar() {
-  
-
-
-  return (
-    <nav >
+   return (
+    <nav  className=" px-5 py-5  bg-[#EAF8F9] ">
       <div >
-        {/* <img
-          src={NavBarIcon}
-          alt="navbar icon"
-          className="w-7 h-10 md:h-full md:w-full"
-        /> */}
-
-        <Link
-          to="/"
-         >
-          Healing
-        </Link>
-      </div>
-
-      {/* Deskop Menu */}
-      <ul >
+      <ul className="flex   justify-evenly">
+        
         <li >
           <Link
-            to="/"
-           
-          >
+            to="/" >
             Home
           </Link>
         </li>
@@ -44,32 +23,23 @@ function NavBar() {
         </li>
 
         <li >
-          <button
-            type="button"
-           
-          >
-            About <i  />
-            
-          </button>
-        </li>
-
-        <li >
           <Link
-            to="/contact"
-           
+            to="/contactUs" 
           >
-            Contact Us
+           Contact
           </Link>
         </li>
-
-    
-      </ul>
-
-      {/* Mobile & Tablet Menus */}
-      
-      
-      
-    </nav>
+        <li >
+          <Link
+            to="/about" 
+          >
+           About
+          </Link>
+        </li>
+        
+        </ul>
+        </div>
+ </nav>
   );
 }
 

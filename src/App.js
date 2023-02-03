@@ -3,11 +3,10 @@ import React from 'react';
 import { Routes, Route, BrowserRouter } from 'react-router-dom';
 import NavBar from './component/Navbar';
 import Home from './pages/Home/Home';
-import Blogs from './pages/Blogs/Blogs';
-import AboutUs from './pages/About/About';
+import Blogs from "./pages/Blogs/Blogs";
+import ContactUs from './pages/contact-us/Contact-us';
+import About from './pages/About/About';
 
-
-import Footer from './component/Footer';
 
 
 function App() {
@@ -15,17 +14,14 @@ function App() {
     <div className="App">
       <BrowserRouter>
         <NavBar />
-
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/blogs" element={<Blogs />} />
-          <Route path="/about" element={<AboutUs />} />
-          
-          
+          <Route path="/contactUs" element={<ContactUs />} />
+          <Route path="/about" element={<About />} />
         </Routes>
 
-        <Footer />
-      </BrowserRouter>
+        </BrowserRouter>
     </div>
   );
 }
